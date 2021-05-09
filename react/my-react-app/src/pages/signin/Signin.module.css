@@ -16,11 +16,23 @@
     /* animation-name: myform;
     animation-iteration-count: infinite;
     animation-duration: 5s; */
-    animation: myform 5s infinite;
+    /* animation: myform 5s infinite; */
+
+    animation: panedrop 2s;
+}
+
+@keyframes panedrop {
+    0% {
+        transform: translateY(-1000px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 @keyframes myform {
-    0% {
+    /* 0% {
         background-image: linear-gradient(to bottom right, white, dodgerblue);
     }
 
@@ -38,7 +50,7 @@
 
     100% {
         background-image: linear-gradient(to bottom right, red, white);
-    }
+    } */
 }
 
 .imagediv {

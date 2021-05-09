@@ -7,14 +7,15 @@ import { Switch, Route } from 'react-router-dom'
 function App() {
   return (
 
-    <Switch>
+    <div>
 
-      <Route exact path='/' component={Signin} />
-      <Route exact path='/signup' component={Signup} />
-      <Route exact path='/dashboard' component={Dashboard} />
+      <Switch>
+          <Route component={Signin} exact path="/" />
+          <Route component={Dashboard} exact path="/dashboard" />
+          <Route component={Signup} exact path="/signup" />
+      </Switch>
 
-    </Switch>
-
+    </div>
 
   )
 }

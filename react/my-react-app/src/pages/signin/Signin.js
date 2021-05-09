@@ -1,6 +1,18 @@
 import SigninCSS from './Signin.module.css'
+import { useState } from 'react'
 
 function Signin() {
+
+    var names = "grace"
+    names ="samuel"
+
+    const [name, setName] = useState("grace")
+
+    function max(event) {
+        event.preventDefault()
+
+    }
+
     return (
         <div className={SigninCSS.main}>
 
@@ -17,8 +29,11 @@ function Signin() {
                     <input placeholder="Username" className={SigninCSS.inputfields} type="text" name="Username" />
                     <input placeholder="Password" className={SigninCSS.inputfields} type="password" name="Username" />
 
-                </div>
 
+                    <button onClick={max} >change name</button>
+
+
+                </div>
 
                 {/**signin button */}
                 <div className={SigninCSS.buttondiv}>
