@@ -2,8 +2,11 @@ import SigninCSS from './Signin.module.css'
 import { useState } from 'react'
 import Dashboard from '../dashboard/Dashboard'
 import MyButton from '../../components/Mybutton/Mybutton'
+import { useHistory } from 'react-router-dom'
 
 function Signin() {
+
+    let history = useHistory()
 
     let myobj = { name: 'samuel', age: 14 }
     console.log(myobj.age);
@@ -45,8 +48,9 @@ function Signin() {
     // let { black: fruit3 } = fruits;
     // console.log(fruit3);
 
-    function max(e) {
+    function signin(e) {
         e.preventDefault()
+        history.push('/dashboard')
     }
 
     return (
@@ -83,8 +87,10 @@ function Signin() {
 
                         <MyButton
                             buttonname="Sign In"
-                            btnMargin = "20px"
-                            btnPadding = "10px"
+                            btnMargin="20px"
+                            btnPadding="10px"
+                            bgColor="yellow"
+                            btnClicked={signin}
                         />
 
                     </div>

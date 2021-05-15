@@ -1,9 +1,13 @@
 import DashboardCss from './Dashboard.module.css'
-import { useState } from 'react'
 import Signup from '../signup/Signup'
 import Mybutton from '../../components/Mybutton/Mybutton'
+import { useState, useContext } from 'react'
+import { MyContext } from '../../store/Context'
+
 
 function Dashboard(props) {
+
+    let { username, setUsername } = useContext(MyContext)
 
     console.log(props)
 
@@ -25,6 +29,10 @@ function Dashboard(props) {
 
     return (
         <div>
+
+            <p>Welcome : {username} </p>
+
+
             <p>
                 {name}
             </p>
@@ -38,8 +46,8 @@ function Dashboard(props) {
 
 
             <Mybutton
-                buttonname = "hello welcome"
-             />
+                buttonname="hello welcome"
+            />
 
 
 

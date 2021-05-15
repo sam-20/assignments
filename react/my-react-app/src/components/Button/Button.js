@@ -4,7 +4,9 @@ function Button(props) {
     return (
         <div>
             <button
-                style={{ backgroundColor: props.buttoncolor }}
+               onClick={props.kojo}
+                style={{ backgroundColor: props.buttoncolor, 
+                    padding:props.btnPadding, margin:props.btnMargin }}
             >
                 {props.buttonname}
             </button>

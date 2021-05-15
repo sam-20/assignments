@@ -5,9 +5,10 @@ function Mybutton(props) {
     return (
         <div>
             <button
-            className={MyButtonCSS.defaultStyles}
-                style={{ 
-                    backgroundColor: props.bgColor ,
+                onClick={props.btnClicked}
+                className={MyButtonCSS.defaultStyles}
+                style={{
+                    backgroundColor: props.bgColor,
                     margin: props.btnMargin,
                     padding: props.btnPadding
                 }}
