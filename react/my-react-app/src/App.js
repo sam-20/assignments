@@ -10,10 +10,13 @@ function App() {
     <div>
 
       <Switch>
-          <Route component={Signin} exact path="/" />
-          <Route component={Dashboard} exact path="/dashboard" />
-          <Route component={Signup} exact path="/signup" />
+        <Route component={Signin} exact path="/" />
+        <Route component={Dashboard} exact path="/dashboard" />
+        <Route component={Signup} exact path="/signup" />
       </Switch>
+
+     
+
 
     </div>
 

@@ -1,18 +1,24 @@
 
 import SignupCSS from './Signup.module.css'
 
-const  Signup =() => {
+const Signup = () => {
 
     return (
         <div>
-            <p className={SignupCSS.mytext}>
-                this is the signup page
-            </p>
+
+            <div>
+
+            </div>
+
+            <div>
+
+            </div>
+
         </div>
     )
 }
 
-function hellow (){
+function hellow() {
     return true
 }
 

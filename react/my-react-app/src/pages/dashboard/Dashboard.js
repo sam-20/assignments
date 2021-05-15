@@ -1,7 +1,11 @@
 import DashboardCss from './Dashboard.module.css'
 import { useState } from 'react'
+import Signup from '../signup/Signup'
+import Mybutton from '../../components/Mybutton/Mybutton'
 
-function Dashboard() {
+function Dashboard(props) {
+
+    console.log(props)
 
     var name = "state management"
     const [name2, setName2] = useState("state management")
@@ -28,6 +32,16 @@ function Dashboard() {
 
 
             <p>{name2}</p>
+
+            <p>retrieved item from signin: {props.item1} </p>
+            <p>retrieved item from signin: props.item1 </p>
+
+
+            <Mybutton
+                buttonname = "hello welcome"
+             />
+
+
 
 
         </div>
